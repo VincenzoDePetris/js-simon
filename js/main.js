@@ -5,7 +5,7 @@ cronometro = setInterval(function () {
     hour = minute * 60,
     day = hour * 24;
   // creo una costante countdown che "punta" a domani alle 9:30
-  const countDown = new Date("august 26, 2023 09:30:00").getTime();
+  const countDown = new Date("august 23, 2023 09:30:00").getTime();
 
   //creo una costante che prende il tempo da ora
   const now = new Date().getTime(),
@@ -22,4 +22,4 @@ cronometro = setInterval(function () {
     (document.getElementById("seconds").innerText = Math.floor(
       (arrivo % minute) / second
     ));
-}, 0);
+}, 1000);
